@@ -1,55 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>ssafit</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container px-5">
+          <a class="navbar-brand" href="index.html"
+            ><span class="fw-bolder text-primary"
+              >Ssafit, Exercise recommendation service</span
+            ></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">로그인</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="list.html">전체 운동</a>
+              </li>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <title>ssafit</title>
-  <!-- Favicon-->
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-  <!-- Custom Google font-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-    rel="stylesheet" />
-  <!-- Bootstrap icons-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-  <!-- Core theme CSS (includes Bootstrap)-->
-  <link href="css/styles.css" rel="stylesheet" />
-</head>
-
-<body class="d-flex flex-column h-100">
-  <main class="flex-shrink-0">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-      <div class="container px-5">
-        <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Ssafit, Exercise recommendation
-            service</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">로그인</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="list.html">전체 운동</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     <!-- Page content-->
     <section class="py-5">
       <div class="container px-5">
@@ -142,20 +155,18 @@
             </div>
             <!-- Submit Button-->
             <div class="d-grid">
-              <button class="btn btn-primary btn-lg" id="submitButton" type="submit" onclick="showAlert()">
-                가입하기
-              </button>
+              <div class="idflex">
+                <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="index.html" onclick="showAlert()">
+                  회원가입
+                </a>
+              </div>
+              
               <script>
-                document.getElementById("submitButton").addEventListener("click", function () {
-                  showAlert();
-                });
-
                 function showAlert() {
-                  alert("가입이 완료되었습니다!");
-                  window.location.href = "index.html";
+                  alert("가입이 완료 되었습니다."); // 원하는 알림창 내용으로 변경
                 }
               </script>
-            </div>
+              
           </div>
           </form>
         </div>
@@ -165,20 +176,25 @@
     </section>
   </main>
   <!-- Footer-->
-  <footer class="bg-white py-4 mt-auto">
+   <!-- Footer-->
+   <footer class="bg-white py-4 mt-auto">
     <div class="container px-5">
-      <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+      <div
+        class="row align-items-center justify-content-between flex-column flex-sm-row"
+      >
         <div class="col-auto">
           <div class="small m-0">
             Copyright &copy; 김민태정태세문단속 Website 2023
           </div>
         </div>
         <div class="col-auto">
-          <a class="small" href="#!" onclick="alert('지구는 둥글다!')">오시는 길</a>
+          <a class="small" href="#!" onclick="alert('서울특별시 강남구 역삼동 테헤란로 212')"
+            >오시는 길</a
+          >
           <span class="mx-1">&middot;</span>
-          <a class="small" href="#!" onclick="alert('문의를 꾹 참아주세요!')">문의</a>
-          <span class="mx-1">&middot;</span>
-          <a class="small" href="contact.html">Contact us</a>
+          <a class="small" href="#!" onclick="alert(' ssafy@ssafy.com 로 문의 바랍니다.')"
+            >문의</a
+          >
         </div>
       </div>
     </div>

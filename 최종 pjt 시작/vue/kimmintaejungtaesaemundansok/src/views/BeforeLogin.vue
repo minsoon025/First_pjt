@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<template>
+  <div>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -31,7 +32,7 @@
       <!-- Navigation-->
       <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
         <div class="container px-5">
-          <a class="navbar-brand" href="index.html"
+          <a class="navbar-brand" href="/start"
             ><span class="fw-bolder text-primary"
               >Ssafit, Exercise recommendation service</span
             ></a
@@ -48,19 +49,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">로그인</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="list.html">전체 운동</a>
-              </li>
-
-            </ul>
-          </div>
+           </div>
         </div>
       </nav>
       <!-- Header-->
@@ -91,13 +80,13 @@
                 >
                   <a
                     class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
-                    href="login.html"
+                    href="/user/login"
                     >로그인</a
                   >
                   <a
                     class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder"
-                    href="list.html"
-                    >전체 목록</a
+                    href="/user/regist"
+                    >회원 가입</a
                   >
                 </div>
               </div>
@@ -108,7 +97,7 @@
                 <div class="profile bg-gradient-primary-to-secondary">
                   <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
                   <!-- Watch a tutorial on how to do this on YouTube (link)-->
-                  <img class="profile-img" src="assets/profile.png" alt="..." />
+                  <img class="profile-img" src="..\assets\profile.png" alt="..." />
                   <div class="dots-1">
                     <!-- SVG Dots-->
                     <svg
@@ -491,9 +480,24 @@
         </div>
       </div>
     </footer>
+  </body>
+</html>
+
+  </div>
+</template>
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-  </body>
-</html>
+
+
+<script>
+export default {
+
+}
+</script>
+
+<style>
+ @import '/css/styles.css';
+</style>
